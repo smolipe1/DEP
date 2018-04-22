@@ -451,7 +451,7 @@ void InterruptHandlerHigh ()
         FLAGbits.CCP3F=PIR3bits.CCP3IF;
         FLAGbits.TMR3F=PIR2bits.TMR3IF;
         
-        //Zvolení sm?ru otá?ek
+        //Zvolení sm?ru otá?ek... dát do ifu (FLAGbits.RUN)
         if(FLAGbits.CCP3F&&!PORTGbits.RG3)
             FLAGbits.DIR=0;
         if(FLAGbits.CCP3F&&PORTGbits.RG3)
@@ -469,7 +469,7 @@ void InterruptHandlerHigh ()
                 }
                 //P?i?lo p?eru?ení nejd?íve od TMR
                 else
-                    K1.TIMER=1;
+                    K1.TIMER=0;
                 //Rotor se neto?í
                 FLAGbits.RUN=0;
                 //Nulování p?íznak?
@@ -478,7 +478,7 @@ void InterruptHandlerHigh ()
             }
             //Nenastala soucasna udalost (A)
             else{
-                K0.TIMER=0;     //Má tam být 0?
+                K0.TIMER=0;     //Má tam být K0?
                 //P?i?la náb??ná hrana?
                 if(FLAGbits.CCP3F){
                     K1.CCPRL=CCPR3L;
