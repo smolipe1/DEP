@@ -208,7 +208,7 @@ while (1){
         }
                 
         /*Tlacitko S4 vstup RJ6 vystup RD7*/
-        if((!FILTROVANA.S4)&&(!BLOCK.S4)){
+        if((!FILTROVANA.S4)&&(!BLOCK.S3)){
             BLOCK.S4=1;
             STAV.S4^=1;
             PORTDbits.RD7^=1;
