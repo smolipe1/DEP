@@ -111,10 +111,12 @@ uint16_t RG4_1p;            //Promena pro prenaseni RG4_1p do preruseni
 T_filter_bin S1T,S2T,S3T,S4T,S5T,S6A,S6B;       //Promene pro filtrovani tlacitek                       
 T_vyhodnoceni_tlacitka hodnota;                 //Prom?ná pro ulkádání výsledku z inkrementálního tla?ítka
 uint8_t citac50ms;                              //Promena pro hlidani 50ms
-int prijato[5];                                 //Promena pro ukladani zpravy z uartu
-unsigned odeslano[2];                           //Promena pro odeslani do uartu
+int prijato[6];                                 //Promena pro ukladani zpravy z a do uartu
+int odeslano[6];
+int16_t OtackyOdeslani;                           //Promena pro odeslani do uartu
+int24_t Frekvence=0;                             //Promena pro ulozeni frekvence (otacky)
 uint24_t PocetImpPoz;                           //Promena pro preneseni Poctu informaci na pozadi
-uint24_t Frekvence=0;                             //Promena pro ulozeni frekvence (otacky)
+
 /*Structy*/
 //Priznakove bity
 struct{
@@ -186,6 +188,7 @@ while (1){
         if((!FILTROVANA.S1)&&(!BLOCK.S1)){                      //Pokud je stiskle tlacitko a neni blokovano1
             BLOCK.S1=1;
             STAV.S1^=1;
+            
         }
         if((FILTROVANA.S1)&&(BLOCK.S1))                       //Odblokovvání tla?ítka po jeho uvoln?ní
             BLOCK.S1=0;
@@ -199,14 +202,21 @@ while (1){
             BLOCK.S2;
         
         /*Tlacitko S3 vstup RJ7 vystup RF7 DOWN, S5 vstup RJ5 výstup RJ4 */
-        if((FILTROVANA.S3)){
-            PORTFbits.RF7=!FILTROVANA.S5;
-            PORTDbits.RD3=!FILTROVANA.S5;
-        }
-        if((FILTROVANA.S5)){
+        if(!BLOCK.S3&&!FILTROVANA.S3){
             PORTJbits.RJ4=!FILTROVANA.S3;
             PORTDbits.RD2=!FILTROVANA.S3;
+            BLOCK.S5=1;
         }
+        if(!BLOCK.S5&&!FILTROVANA.S5){
+            PORTFbits.RF7=!FILTROVANA.S5;
+            PORTDbits.RD3=!FILTROVANA.S5;
+            BLOCK.S3=1;
+        }
+        if(FILTROVANA.S3)
+            BLOCK.S5=0;
+        if(FILTROVANA.S5)
+            BLOCK.S3=0;
+            
                
         /*Tlacitko S4 vstup RJ6 vystup RD7*/
         if((!FILTROVANA.S4)&&(!BLOCK.S4)){
@@ -216,25 +226,33 @@ while (1){
         }
         if((FILTROVANA.S4)&&(BLOCK.S4))
             BLOCK.S4=0;
+        
+        /*Zapis na ledky*/
+        PORTDbits.RD4=FLAGbits.DIR;
+               
         /* Vypocet otacek z poctu impulsu*/ 
+        FLAGbits.OT_SEMAFOR=0;
         switch(FLAGbits.RUN){
             case 0:{
                 Frekvence=0;
                 break;
             }
             case 1:{
-                FLAGbits.OT_SEMAFOR=0;
-                Frekvence=10^7/PocetImpPoz;
-                FLAGbits.OT_SEMAFOR=1;
+                if(FLAGbits.DIR){
+                    Frekvence=10^7/PocetImpPoz;
+                    
+                }
+                else{
+                    Frekvence=(-1*10^7/PocetImpPoz);
+                }                
                 break;
-            }
-            
-                
+            }                
         }
-        odeslano[2]=Frekvence>>16;
-        odeslano[1]=Frekvence>>8;
-        odeslano[0]=Frekvence;
-        
+        OtackyOdeslani=Frekvence;
+        odeslano[4]=OtackyOdeslani>>8;
+        odeslano[5]=OtackyOdeslani;
+        FLAGbits.OT_SEMAFOR=1;
+       
         if ((!citac50ms)) {             //Kazdych 50 ms
 			citac50ms = PERIODA_50_MS;	//reinicializace             	
             /* Je nova zprava? */
@@ -251,13 +269,15 @@ while (1){
                         /* Jednoliva slova typu "BYTE" jsou ukladana jako 
                          * zprava k odeslani.
                          */
-                        setByteToMsgUart(&uart_1, odeslano[index], index); 	// index je poradove cislo bytu
+                         	// index je poradove cislo bytu
                     }
                     hodnota_uart=prijato[3];   // zapis low bytu parametru 1
+                    setByteToMsgUart(&uart_1, odeslano[4], 4);
+                    setByteToMsgUart(&uart_1, odeslano[5], 5);
 					/* Zapisem delky odesilane zpravy se startuje proces 
                      * vysilani zpravy po seriovem komunikacnim kanalu.
                      */
-                    setLengthMsgUart(&uart_1, delkaZpravy);
+                    setLengthMsgUart(&uart_1, 6);
                     /* Nazani priznaku nove prijate zpravy. */
                     clearFlagNewMsg(&uart_1);
                 }
@@ -403,6 +423,8 @@ void InitFLAGbits(void){
 	FLAGbits.ONE_MS=1;
 	FLAGbits.PWM_SEMAFOR=1;
     FLAGbits.RUN=0;
+    FLAGbits.DIR=0;
+    FLAGbits.OT_SEMAFOR=1;
 }
 void InitStructTlacitka(void){
     STAV.CELA=0;
