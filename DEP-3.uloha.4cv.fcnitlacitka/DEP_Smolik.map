@@ -1,0 +1,1178 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Mon Apr 23 16:44:34 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .code___init.o       code   0x000006    program   0x000002
+      InterruptVectorHigh       code   0x000008    program   0x000006
+        .idata_uart_1.o_i    romdata   0x00000e    program   0x000000
+        .romdata_uart_1.o    romdata   0x00000e    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x00000e    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00000e    program   0x000000
+      .idata_fxd2424u.o_i    romdata   0x00000e    program   0x000000
+          .romdata_main.o    romdata   0x00000e    program   0x000000
+      .romdata_fxd2424u.o    romdata   0x00000e    program   0x000000
+        .idata___init.o_i    romdata   0x00000e    program   0x000000
+    .romdata_filter_bin.o    romdata   0x00000e    program   0x000000
+    .idata_filter_bin.o_i    romdata   0x00000e    program   0x000000
+        .romdata___init.o    romdata   0x00000e    program   0x000000
+.romdata_vyhodnoceni_tlacitka.o    romdata   0x00000e    program   0x000000
+.idata_vyhodnoceni_tlacitka.o_i    romdata   0x00000e    program   0x000000
+            .code_c018i.o       code   0x00000e    program   0x000000
+         .romdata_c018i.o    romdata   0x00000e    program   0x000000
+         .idata_c018i.o_i    romdata   0x00000e    program   0x000000
+       InterruptVectorLow       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x00000e
+           .code_uart_1.o       code   0x00002c    program   0x00182e
+             .code_main.o       code   0x00185a    program   0x0009ee
+.code_vyhodnoceni_tlacitka.o       code   0x002248    program   0x0004be
+       .code_filter_bin.o       code   0x002706    program   0x0001c8
+               _cinit_scn       code   0x0028ce    program   0x00009e
+                     PROG       code   0x00296c    program   0x00004c
+         .code_fxd2424u.o       code   0x0029b8    program   0x00003a
+         .code_fxd1616u.o       code   0x0029f2    program   0x00002c
+                    .code       code   0x002a1e    program   0x000020
+             _startup_scn       code   0x002a3e    program   0x00001c
+          .idata_main.o_i    romdata   0x002a5a    program   0x00000b
+     .config_1fff8_main.o    romdata   0x01fff8    program   0x000001
+     .config_1fff9_main.o    romdata   0x01fff9    program   0x000001
+     .config_1fffa_main.o    romdata   0x01fffa    program   0x000001
+     .config_1fffb_main.o    romdata   0x01fffb    program   0x000001
+     .config_1fffc_main.o    romdata   0x01fffc    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000008
+ InterruptHandlerHigh_tmp      udata   0x000018       data   0x000003
+                 UART_RAM      udata   0x000100       data   0x0000a7
+                   .stack      udata   0x000e00       data   0x000100
+            .idata_main.o      idata   0x000f00       data   0x00000b
+           .udata_c018i.o      udata   0x000f0b       data   0x00000a
+          .idata___init.o      idata   0x000f15       data   0x000000
+          .udata___init.o      udata   0x000f15       data   0x000000
+        .idata_fxd2424u.o      idata   0x000f15       data   0x000000
+        .udata_fxd2424u.o      udata   0x000f15       data   0x000000
+        .idata_fxd1616u.o      idata   0x000f15       data   0x000000
+        .udata_fxd1616u.o      udata   0x000f15       data   0x000000
+          .idata_uart_1.o      idata   0x000f15       data   0x000000
+          .udata_uart_1.o      udata   0x000f15       data   0x000000
+            .udata_main.o      udata   0x000f15       data   0x000000
+      .idata_filter_bin.o      idata   0x000f15       data   0x000000
+      .udata_filter_bin.o      udata   0x000f15       data   0x000000
+.idata_vyhodnoceni_tlacitka.o      idata   0x000f15       data   0x000000
+.udata_vyhodnoceni_tlacitka.o      udata   0x000f15       data   0x000000
+           .idata_c018i.o      idata   0x000f15       data   0x000000
+              SFR_BANKED0      udata   0x000f5a       data   0x000006
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00000d      
+                            0x000018    0x002a64      
+                            0x01fff8    0x01fffc      
+            10848 out of 131072 program addresses used, program memory utilization is 8%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   D1616S   0x00298e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x00299c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002998    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0029ae    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x00297e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 FXD1616S   0x00296c    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x0029f2    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
+                 FXD2424U   0x0029b8    program     extern C:\MCC18\v3_39\src\traditional\math\fxd2424u.c
+                FilterBin   0x002736    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\filter_bin.c
+          HlidacHranicInk   0x001f22    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+         HlidacHranicUart   0x001f06    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 InitCCP3   0x001ee8    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 InitCCP5   0x001ed2    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+             InitFLAGbits   0x001f44    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            InitFilterBin   0x002706    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\filter_bin.c
+                    InitK   0x001f5e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       InitRadicPreruseni   0x001ef6    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       InitStructTlacitka   0x001f52    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitTimer2   0x001ea8    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitTimer3   0x001ec2    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitVstupy   0x001e98    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              InitVystupy   0x001e74    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+Init_Vyhodnoceni_Tlacitka   0x002248    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+     InterruptHandlerHigh   0x001f6e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+      InterruptHandlerLow   0x00218a    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+      InterruptVectorHigh   0x000008    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       InterruptVectorLow   0x000018    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              ResetHranic   0x001f3e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 Timer2On   0x001efe    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 Timer3On   0x001f02    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+     Vyhodnoceni_Tlacitka   0x002276    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+       ___case_0_lbl00028   0x001c52    program     static                          
+       ___case_1_lbl00031   0x001c5c    program     static                          
+         ___else_lbl00030   0x001c9a    program     static                          
+         ___else_lbl00033   0x001de0    program     static                          
+          ___for_lbl00021   0x001c06    program     static                          
+          ___for_lbl00022   0x001c0c    program     static                          
+          ___for_lbl00023   0x001b94    program     static                          
+           ___if_lbl00004   0x00195c    program     static                          
+           ___if_lbl00006   0x001974    program     static                          
+           ___if_lbl00008   0x0019b8    program     static                          
+           ___if_lbl00010   0x0019d0    program     static                          
+           ___if_lbl00012   0x001a18    program     static                          
+           ___if_lbl00014   0x001a30    program     static                          
+           ___if_lbl00016   0x001abc    program     static                          
+           ___if_lbl00018   0x001af4    program     static                          
+           ___if_lbl00019   0x001b1e    program     static                          
+           ___if_lbl00020   0x001b48    program     static                          
+           ___if_lbl00024   0x001c3a    program     static                          
+           ___if_lbl00025   0x001c3a    program     static                          
+           ___if_lbl00026   0x001c3a    program     static                          
+           ___if_lbl00029   0x001cd8    program     static                          
+           ___if_lbl00032   0x001e5e    program     static                          
+           ___if_lbl00034   0x001e5e    program     static                          
+       ___return_lbl00000   0x002a1c    program     static                          
+       ___return_lbl00000   0x001e72    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x0029f0    program     static                          
+       ___return_lbl00001   0x002a58    program     static                          
+       ___return_lbl00002   0x00296a    program     static                          
+       ___return_lbl00058   0x00000c    program     static                          
+       ___return_lbl00059   0x00001c    program     static                          
+   ___switchexit_lbl00027   0x001cda    program     static                          
+        ___while_lbl00001   0x001904    program     static                          
+        ___while_lbl00002   0x001e70    program     static                          
+               __config_0   0x01fff8    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_1   0x01fff9    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_2   0x01fffa    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_3   0x01fffb    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_4   0x01fffc    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                   __init   0x000006    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+               __tmplbl_0   0x001952    program     static                          
+               __tmplbl_1   0x001948    program     static                          
+              __tmplbl_10   0x001a2c    program     static                          
+              __tmplbl_11   0x001a22    program     static                          
+              __tmplbl_12   0x001a98    program     static                          
+              __tmplbl_13   0x001a8e    program     static                          
+              __tmplbl_14   0x001ad0    program     static                          
+              __tmplbl_15   0x001ac6    program     static                          
+               __tmplbl_2   0x001970    program     static                          
+              __tmplbl_28   0x000fc6    program     static                          
+               __tmplbl_3   0x001966    program     static                          
+              __tmplbl_35   0x000fb6    program     static                          
+              __tmplbl_36   0x000fc6    program     static                          
+              __tmplbl_37   0x000f8e    program     static                          
+              __tmplbl_39   0x000fb6    program     static                          
+               __tmplbl_4   0x0019ae    program     static                          
+               __tmplbl_5   0x0019a4    program     static                          
+               __tmplbl_6   0x0019cc    program     static                          
+               __tmplbl_7   0x0019c2    program     static                          
+               __tmplbl_8   0x001a0e    program     static                          
+               __tmplbl_9   0x001a04    program     static                          
+            __zero_memory   0x002a1e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                _do_cinit   0x0028ce    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _false   0x0029ec    program     static                          
+                 _startup   0x002a3e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+            addByteToFifo   0x00023e    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               clearArray   0x00002c    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+          clearFlagNewMsg   0x000ff4    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                compare_l   0x002a34    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                copy_loop   0x002940    program     static                          
+            copy_one_byte   0x002946    program     static                          
+                     done   0x00296a    program     static                          
+             done_copying   0x002954    program     static                          
+                  endloop   0x002a18    program     static                          
+           getArrayLength   0x00012e    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         getByteFromArray   0x0000ba    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+       getByteFromMsgUart   0x001126    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         getLengthMsgUart   0x00119a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               getMsgUart   0x001012    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                  hex2Num   0x0004c0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                 initFifo   0x00014c    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               initUart_1   0x00059a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+              isEmptyUart   0x0011d6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                isHexChar   0x0003d6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+             isNewMsgUart   0x000fd0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                isrUart_1   0x001732    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               lengthFifo   0x0003b6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                     loop   0x0029c4    program     static                          
+                     loop   0x0029fc    program     static                          
+                     loop   0x002a4e    program     static                          
+                   loop_h   0x002a2c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   loop_l   0x002a36    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     main   0x00185a    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  num2Hex   0x00056a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+       removeByteFromFifo   0x0002fa    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+              sendMsgUart   0x0013b0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+           setArrayLength   0x0000fa    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+           setByteToArray   0x000076    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         setByteToMsgUart   0x0012f0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         setLengthMsgUart   0x001358    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+             setMsgToUart   0x001204    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                     test   0x0028e8    program     static                          
+                     uart   0x0006ca    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               zero_block   0x002a2c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    BLOCK   0x0001a3       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               FILTROVANA   0x0001a5       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 FLAGbits   0x00019a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                Frekvence   0x000f08       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                       K0   0x00019b       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                       K1   0x00019e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON1   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+           OtackyOdeslani   0x000195       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PocetImpPoz   0x000197       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    RG4_0   0x000f04       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    RG4_1   0x000f06       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S1T   0x000174       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S2T   0x000176       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S3T   0x000178       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S4T   0x000172       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S5T   0x00017a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S6A   0x00016e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S6B   0x000170       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     SIGN   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSP1MSKbits   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     STAV   0x0001a1       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                  __tmp_0   0x000010       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  __tmp_0   0x000010       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+                  __tmp_1   0x000018       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                citac50ms   0x00017e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                curr_byte   0x000f0e       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f10       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x000f12       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+              delkaZpravy   0x000167       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       filtrovana_stopa_A   0x00016c       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       filtrovana_stopa_B   0x00016d       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  hodnota   0x00017c       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+             hodnota_uart   0x000f01       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            hodnota_uart1   0x000f02       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    index   0x000168       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 odeslano   0x000189       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              perioda_1ms   0x000f00       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            pocitadlo_1ms   0x00016a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      pom   0x000169       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 prijato1   0x00017f       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     prom   0x000f0b       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   uart_1   0x000100       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            znamenko_uart   0x000f03       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   __init   0x000006    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+      InterruptVectorHigh   0x000008    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       ___return_lbl00058   0x00000c    program     static                          
+       InterruptVectorLow   0x000018    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       ___return_lbl00059   0x00001c    program     static                          
+               clearArray   0x00002c    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+           setByteToArray   0x000076    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         getByteFromArray   0x0000ba    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+           setArrayLength   0x0000fa    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+           getArrayLength   0x00012e    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                 initFifo   0x00014c    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+            addByteToFifo   0x00023e    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+       removeByteFromFifo   0x0002fa    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               lengthFifo   0x0003b6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                isHexChar   0x0003d6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                  hex2Num   0x0004c0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                  num2Hex   0x00056a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               initUart_1   0x00059a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                     uart   0x0006ca    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+              __tmplbl_37   0x000f8e    program     static                          
+              __tmplbl_35   0x000fb6    program     static                          
+              __tmplbl_39   0x000fb6    program     static                          
+              __tmplbl_36   0x000fc6    program     static                          
+              __tmplbl_28   0x000fc6    program     static                          
+             isNewMsgUart   0x000fd0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+          clearFlagNewMsg   0x000ff4    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+               getMsgUart   0x001012    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+       getByteFromMsgUart   0x001126    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         getLengthMsgUart   0x00119a    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+              isEmptyUart   0x0011d6    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+             setMsgToUart   0x001204    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         setByteToMsgUart   0x0012f0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+         setLengthMsgUart   0x001358    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+              sendMsgUart   0x0013b0    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                isrUart_1   0x001732    program     extern C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                     main   0x00185a    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+        ___while_lbl00001   0x001904    program     static                          
+               __tmplbl_1   0x001948    program     static                          
+               __tmplbl_0   0x001952    program     static                          
+           ___if_lbl00004   0x00195c    program     static                          
+               __tmplbl_3   0x001966    program     static                          
+               __tmplbl_2   0x001970    program     static                          
+           ___if_lbl00006   0x001974    program     static                          
+               __tmplbl_5   0x0019a4    program     static                          
+               __tmplbl_4   0x0019ae    program     static                          
+           ___if_lbl00008   0x0019b8    program     static                          
+               __tmplbl_7   0x0019c2    program     static                          
+               __tmplbl_6   0x0019cc    program     static                          
+           ___if_lbl00010   0x0019d0    program     static                          
+               __tmplbl_9   0x001a04    program     static                          
+               __tmplbl_8   0x001a0e    program     static                          
+           ___if_lbl00012   0x001a18    program     static                          
+              __tmplbl_11   0x001a22    program     static                          
+              __tmplbl_10   0x001a2c    program     static                          
+           ___if_lbl00014   0x001a30    program     static                          
+              __tmplbl_13   0x001a8e    program     static                          
+              __tmplbl_12   0x001a98    program     static                          
+           ___if_lbl00016   0x001abc    program     static                          
+              __tmplbl_15   0x001ac6    program     static                          
+              __tmplbl_14   0x001ad0    program     static                          
+           ___if_lbl00018   0x001af4    program     static                          
+           ___if_lbl00019   0x001b1e    program     static                          
+           ___if_lbl00020   0x001b48    program     static                          
+          ___for_lbl00023   0x001b94    program     static                          
+          ___for_lbl00021   0x001c06    program     static                          
+          ___for_lbl00022   0x001c0c    program     static                          
+           ___if_lbl00024   0x001c3a    program     static                          
+           ___if_lbl00025   0x001c3a    program     static                          
+           ___if_lbl00026   0x001c3a    program     static                          
+       ___case_0_lbl00028   0x001c52    program     static                          
+       ___case_1_lbl00031   0x001c5c    program     static                          
+         ___else_lbl00030   0x001c9a    program     static                          
+           ___if_lbl00029   0x001cd8    program     static                          
+   ___switchexit_lbl00027   0x001cda    program     static                          
+         ___else_lbl00033   0x001de0    program     static                          
+           ___if_lbl00032   0x001e5e    program     static                          
+           ___if_lbl00034   0x001e5e    program     static                          
+        ___while_lbl00002   0x001e70    program     static                          
+       ___return_lbl00000   0x001e72    program     static                          
+              InitVystupy   0x001e74    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitVstupy   0x001e98    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitTimer2   0x001ea8    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               InitTimer3   0x001ec2    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 InitCCP5   0x001ed2    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 InitCCP3   0x001ee8    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       InitRadicPreruseni   0x001ef6    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 Timer2On   0x001efe    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 Timer3On   0x001f02    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+         HlidacHranicUart   0x001f06    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+          HlidacHranicInk   0x001f22    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              ResetHranic   0x001f3e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+             InitFLAGbits   0x001f44    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       InitStructTlacitka   0x001f52    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    InitK   0x001f5e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+     InterruptHandlerHigh   0x001f6e    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+      InterruptHandlerLow   0x00218a    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+Init_Vyhodnoceni_Tlacitka   0x002248    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+     Vyhodnoceni_Tlacitka   0x002276    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+            InitFilterBin   0x002706    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\filter_bin.c
+                FilterBin   0x002736    program     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\filter_bin.c
+                _do_cinit   0x0028ce    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x0028e8    program     static                          
+                copy_loop   0x002940    program     static                          
+            copy_one_byte   0x002946    program     static                          
+             done_copying   0x002954    program     static                          
+       ___return_lbl00002   0x00296a    program     static                          
+                     done   0x00296a    program     static                          
+                 FXD1616S   0x00296c    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x00297e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                   D1616S   0x00298e    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x002998    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x00299c    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0029ae    program     static C:\MCC18\v3_39\src\traditional\math\fxd1616s.asm
+                 FXD2424U   0x0029b8    program     extern C:\MCC18\v3_39\src\traditional\math\fxd2424u.c
+                     loop   0x0029c4    program     static                          
+                   _false   0x0029ec    program     static                          
+       ___return_lbl00000   0x0029f0    program     static                          
+                 FXD1616U   0x0029f2    program     extern C:\MCC18\v3_39\src\traditional\math\fxd1616u.c
+                     loop   0x0029fc    program     static                          
+                  endloop   0x002a18    program     static                          
+       ___return_lbl00000   0x002a1c    program     static                          
+            __zero_memory   0x002a1e    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               zero_block   0x002a2c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   loop_h   0x002a2c    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                compare_l   0x002a34    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   loop_l   0x002a36    program     static C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 _startup   0x002a3e    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x002a4e    program     static                          
+       ___return_lbl00001   0x002a58    program     static                          
+               __config_0   0x01fff8    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_1   0x01fff9    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_2   0x01fffa    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_3   0x01fffb    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               __config_4   0x01fffc    program     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     SIGN   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                 __AARGB7   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern C:\MCC18\v3_39\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern C:\MCC18\v3_39\src\traditional\math\barg.asm
+                  __tmp_0   0x000010       data     static C:\Users\lev\Documents\K_13114\RPO_2016\MPLAB_X\UART_DEMO_2016\UART_src_2016.X\src\uart_1.c
+                  __tmp_0   0x000010       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  __tmp_0   0x000010       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\vyhodnoceni_tlacitka.c
+                  __tmp_1   0x000018       data     static C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                   uart_1   0x000100       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              delkaZpravy   0x000167       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    index   0x000168       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      pom   0x000169       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            pocitadlo_1ms   0x00016a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       filtrovana_stopa_A   0x00016c       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+       filtrovana_stopa_B   0x00016d       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S6A   0x00016e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S6B   0x000170       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S4T   0x000172       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S1T   0x000174       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S2T   0x000176       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S3T   0x000178       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                      S5T   0x00017a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                  hodnota   0x00017c       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                citac50ms   0x00017e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 prijato1   0x00017f       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 odeslano   0x000189       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+           OtackyOdeslani   0x000195       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              PocetImpPoz   0x000197       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                 FLAGbits   0x00019a       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                       K0   0x00019b       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                       K1   0x00019e       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     STAV   0x0001a1       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    BLOCK   0x0001a3       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+               FILTROVANA   0x0001a5       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+              perioda_1ms   0x000f00       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+             hodnota_uart   0x000f01       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            hodnota_uart1   0x000f02       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+            znamenko_uart   0x000f03       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    RG4_0   0x000f04       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                    RG4_1   0x000f06       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                Frekvence   0x000f08       data     extern C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-2.uloha-funkci\main.c
+                     prom   0x000f0b       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x000f0e       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f10       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x000f12       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              SSP1MSKbits   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   ODCON1   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F87J11.asm
+
+
