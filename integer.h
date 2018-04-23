@@ -85,31 +85,6 @@ typedef volatile union{
   int32_t word;
 } int32s_t;
 
-/*typedef struct{
-    unsigned B0 : 1;
-    unsigned B1 : 1;
-   }Jmeno
- 
-typedef struct{
-    unsigned B0 : 1;
-    unsigned B1 : 1;
-    unsigned B2 : 1;
-    unsigned B3 : 1;
-    unsigned B4 : 1;
-    unsigned B5 : 1;
-    unsigned B6 : 1;
-    unsigned B7 : 1;
-}BYTE;
-
-typedef volatile union{
-struct{
-	BYTE CCPRL;
-	BYTE CCPRH;
-	BYTE TIMER;
-};
-unsigned short long CELA;
-}T_Capture_Value;
-*/
 
 
 
@@ -208,49 +183,6 @@ typedef volatile union {
     };
     T_int32 word;
 } T_int32s;
-
-typedef volatile union{
-    struct{
-        unsigned S1:1;
-        unsigned S2:1;
-        unsigned S3:1;
-        unsigned S4:1;
-        unsigned S5:1;
-    };
-    unsigned short CELA;
-}T_Button_Struct;
-typedef volatile union{
-    struct{
-        unsigned char CCPRL;
-        unsigned char CCPRH;
-        unsigned char TIMER;
-    };
-    unsigned short long CELA;
-}T_Capture_Value;
-/*
-typedef volatile union{
-    struct{
-        unsigned char B0:1;
-        unsigned char B1:1;
-        unsigned char B2:1;
-        unsigned char B3:1;
-        unsigned char B4:1;
-        unsigned char B5:1;
-        unsigned char B6:1;
-        unsigned char B7:1;
-        
-    };
-    unsigned short BYTE;
-}T_BYTE;   
-typedef volatile union{
-struct{
-	T_BYTE CCPRL;
-	T_BYTE CCPRH;
-	T_BYTE TIMER;
-};
-unsigned short long CELA;
-}T_CPT_V;
-*/
 
 //----------------------------------------------------------------------------
 /* Definice globalni promenne. */
