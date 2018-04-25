@@ -85,31 +85,6 @@ typedef volatile union{
   int32_t word;
 } int32s_t;
 
-/*typedef struct{
-    unsigned B0 : 1;
-    unsigned B1 : 1;
-   }Jmeno
- */
-typedef struct{
-    unsigned B0 : 1;
-    unsigned B1 : 1;
-    unsigned B2 : 1;
-    unsigned B3 : 1;
-    unsigned B4 : 1;
-    unsigned B5 : 1;
-    unsigned B6 : 1;
-    unsigned B7 : 1;
-}BYTE;
-
-typedef volatile union{
-struct{
-	BYTE CCPRL;
-	BYTE CCPRH;
-	BYTE TIMER;
-};
-unsigned short long CELA;
-}T_Capture_Value;
-
 
 
 
@@ -210,25 +185,23 @@ typedef volatile union {
 } T_int32s;
 
 typedef volatile union{
-struct{
-	unsigned char S1:1;
-	unsigned char S2:1;
-	unsigned char S3:1;
-    unsigned char S4:1;
-    unsigned char S5:1;
-};
-unsigned short CELA;
+    struct{
+        T_boolean S1:1;
+        T_boolean S2:1;
+        T_boolean S3:1;
+        T_boolean S4:1;
+        T_boolean S5:1;
+    };
+    unsigned short CELA;
 }T_Button_Struct;
-
 typedef volatile union{
-struct{
-	unsigned char CCPRL;
-	unsigned char CCPRH;
-	unsigned char TIMER;
-};
-unsigned short long CELA;
+    struct{
+        unsigned char CCPRL;
+        unsigned char CCPRH;
+        unsigned char TIMER;
+    };
+    unsigned short long CELA;
 }T_Capture_Value;
-
 //----------------------------------------------------------------------------
 /* Definice globalni promenne. */
 //----------------------------------------------------------------------------

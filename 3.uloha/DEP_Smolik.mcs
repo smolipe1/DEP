@@ -2,7 +2,7 @@
 MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
 Version=1.0
 [File000]
-Location=C:\Documents and Settings\Student\Plocha\DEP smolik\3 uloha\DEP_Smolik_3\DEP_Smolik_3\files\vyhodnoceni_tlacitka.o
+Location=C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-3.uloha.4cv.fcnitlacitka\vyhodnoceni_tlacitka.o
 Folder=Intermediary
 DeviceName=PIC18F87J11
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -15,7 +15,7 @@ ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
 TraceCmdString=
 DebugOptions=-D__DEBUG
 [File001]
-Location=C:\Documents and Settings\Student\Plocha\DEP smolik\3 uloha\DEP_Smolik_3\DEP_Smolik_3\files\filter_bin.o
+Location=C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-3.uloha.4cv.fcnitlacitka\filter_bin.o
 Folder=Intermediary
 DeviceName=PIC18F87J11
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -28,7 +28,7 @@ ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
 TraceCmdString=
 DebugOptions=-D__DEBUG
 [File002]
-Location=C:\Documents and Settings\Student\Plocha\DEP smolik\3 uloha\DEP_Smolik_3\DEP_Smolik_3\files\main.o
+Location=C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-3.uloha.4cv.fcnitlacitka\main.o
 Folder=Intermediary
 DeviceName=PIC18F87J11
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -41,7 +41,7 @@ ToolArgsString=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
 TraceCmdString=
 DebugOptions=-D__DEBUG
 [File003]
-Location=C:\Documents and Settings\Student\Plocha\DEP smolik\3 uloha\DEP_Smolik_3\DEP_Smolik_3\files\DEP_Smolik.cof
+Location=C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-3.uloha.4cv.fcnitlacitka\DEP_Smolik.cof
 Folder=Output
 DeviceName=PIC18F87J11
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
@@ -54,7 +54,7 @@ ToolArgsString=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /
 TraceCmdString=
 DebugOptions=/z__MPLAB_DEBUG=1
 [File004]
-Location=C:\Documents and Settings\Student\Plocha\DEP smolik\3 uloha\DEP_Smolik_3\DEP_Smolik_3\files\DEP_Smolik.hex
+Location=C:\Documents and Settings\Student\Plocha\DEP smolik\DEP\INT\DEP-2.uloha-funkci\DEP-3.uloha.4cv.fcnitlacitka\DEP_Smolik.hex
 Folder=Output
 DeviceName=PIC18F87J11
 LanguageToolSuiteID={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
